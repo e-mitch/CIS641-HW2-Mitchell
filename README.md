@@ -1,1 +1,1 @@
-# t-CIS641-HW2-Mitchell
+# CIS641-HW2-Mitchell
