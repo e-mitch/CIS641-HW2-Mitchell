@@ -3,13 +3,14 @@
 <meta charset="UTF-8">
 <title>Ellie Mitchell</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 <header>
   <h1> Ellie Mitchell</h1>
   <h2> Student, Software Developer, Writer</h2>
 </header>
-<body>
+<body onload="setupPage()">
 <div id="school">
-  <h3>Academic History</h3>
+  <h3 onclick="toggleSchool()">Academic History</h3>
   <div class="left">
     <h4>Graduate</h4>
     <ul>
@@ -64,7 +65,7 @@
       </ul>
     </div>
 </div>
-<div id="work">
+<div id="work" onclick="toggleWork()">
   <h3>Employment History</h3>
   <div class="left">
     <h4>O.S.T.</h4>
@@ -101,6 +102,77 @@
       <li>Created a test using HTML, CSS, JavaScript, and PHP to match students with career paths</li>
       <li>Implemented on the website of the Burma Center, a local nonprofit</li>
     </ul>
+  </div>
+</div>
+<div id="interests">
+  <h3 onclick="toggleInterests()">Interests</h3>
+  <div id="interestsText">
+    <h4>Writing Fiction</h4>
+    <ul>
+      <li>Wrote my first original novel at ~12 years old</li>
+      <li>Worked on projects in various genres: fantasy, sci-fi, western, post-apocalyptic, and crime</li>
+      <li>Completed my first adult novel in winter 2021</li>
+      <li>Created several worlds</li>
+      <li>Executed extensive research (historical and other) for writing projects</li>
+      <li>Researched and practiced writing topics such as worldbuilding, character development, and editing</li>
+    </ul>
+    <h4>Fitness</h4>
+    <ul>
+      <li>Taught dance in high school</li>
+      <li>Started strength training in college</li>
+      <li>Train daily, making consistent progress</li>
+      <li>Experienced with both bodyweight and weighted exercises</li>
+    </ul>
+    <h4>Cooking</h4>
+    <ul>
+      <li>Started learning to cook as a child</li>
+      <li>Have experience cooking many different cuisines</li>
+    </ul>
+    <h4>Music</h4>
+    <ul>
+        <li>Played piano and sang since childhood; learned guitar and Irish whistle later</li>
+        <li>Arrange many kinds of music, mainly for piano</li>
+        <li>Record covers of various songs</li>
+        <li>Write and record orchestral music</li>
+    </ul>
+    <h4>Studying History</h4>
+    <ul>
+      <li>Pursuing independent study of various history topics</li>
+      <li>Specific interest in WWII and the American Civil war</li>
+    </ul>
+  </div>
+</div>
+<div id="technical">
+  <h3 onclick="toggleTechnical()">Technical Background</h3>
+  <div id="technicalText">
+    <p>I started programming in high school, beginning with some free online courses. By the time I started college,
+    I had experience with HTML, CSS, and Python. I then completed a bachelor's in Information Systems at
+    GVSU, joining the combined Bachelor's of Information Systems/ Master's of Applied Computer Science
+    program partway through my undergrad years. As an undergrad, I studied more HTML and CSS, Java,
+    JavaScript, Ruby on Rails, SQL, and COBOL. Since starting my master's, I have also spent more time with
+    Java, studied Python, worked in R, and learned concepts about algorithms, artificial intelligence, information
+    visualization, and more. </p>
+    </br>
+    <p>Outside of school, I did an IT internship at Kellogg's, where among other projects, I spearheaded a project to
+    create a  new website and career assessment test for a local nonprofit helping Burmese immigrant children in
+    Battle Creek, MI. As a fairly inexperienced coder with very little access to help, this was a project that I grew a
+    lot from. The summer before my senior year, I began working at OST in Grand Rapids on the Configuration
+    Services team, where I worked as a CET developer, learning a proprietary programming language used for 3D
+    design. I interned there full-time and continued to work part-time during my senior year until a medical diagnosis
+    stopped me. I plan to continue working there once I have the availability.</p>
+  </div>
+</div>
+<div id="project">
+  <h3 onclick="toggleProject()">Term Project</h3>
+  <div id="projectText">
+    <p>This semester in CIS 641, I am creating an app that will be called Commentarius (Latin for "diary") which is intended
+to allow people to create freeform diary entries and tag specific areas of text within entries with
+custom tags. The user can then access individual entries or access all text which has been given
+a certain tag. Users can create, read, update, and delete entries or tagged text. They can also filter
+entries or tagged text by year or month. The app is especially targeted toward people who have
+serious medical diagnoses, whose entries may contain things like questions for doctors,
+breakthroughs, side effects, etc. Each of these categories could be assigned a tag. The overall
+goal of the app is to allow people to write freely but easily access specific categories of text later.</p>
   </div>
 </div>
 </body>

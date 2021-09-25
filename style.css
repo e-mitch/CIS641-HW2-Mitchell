@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed:wght@300&display=swap');
 .left{
+  display:none;
   width:48%;
   float:left;
 }
 .right{
+  display:none;
   width:48%;
   float:left;
 }
@@ -50,11 +52,25 @@ h5{
   color: #A6D9F7;
 }
 
-li{
+li, #technical p, #project p{
   font-family: 'Open Sans Condensed', sans-serif;
   color: #ffffff;
 }
 
 div{
   padding:1%;
+}
+
+#interestsText{
+  display:none;
+  column-count:2;
+  column-gap:20px;
+}
+
+#technicalText{
+  display:none;
+}
+
+#projectText{
+  display:none;
 }
