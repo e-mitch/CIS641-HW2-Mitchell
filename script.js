@@ -5,14 +5,17 @@ function toggleVisibility(clickedElement){
     var label = sectionHeaders[i].id;
     if(textDivs[i].id != clickedElement){
       textDivs[i].style.display = "none";
-      sectionHeaders[i].style.border="none";
+      sectionHeaders[i].style.color = "#D9E76C";
+      sectionHeaders[i].style.textDecoration = "none";
     } else {
       if(textDivs[i].style.display == "inline"){
         textDivs[i].style.display = "none";
-        sectionHeaders[i].style.border = "none";
+        sectionHeaders[i].style.color = "#D9E76C";
+        sectionHeaders[i].style.textDecoration = "none";
       } else {
         textDivs[i].style.display = "inline";
-        sectionHeaders[i].style.border = "1px solid #D9E76C";
+        sectionHeaders[i].style.color="#FBFCF0";
+        sectionHeaders[i].style.textDecoration="underline";
       }
     }
   }
