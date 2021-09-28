@@ -1,3 +1,4 @@
+
 function toggleVisibility(clickedElement){
   var sectionHeaders = document.getElementById("sectionHeaders").getElementsByTagName("h3");
   var textDivs = document.getElementsByClassName("textDiv");

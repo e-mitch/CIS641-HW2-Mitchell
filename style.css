@@ -2,6 +2,16 @@
 #school, #work, #interests, #technical, #project{
   display:none;
 }
+
+#schoolLabel, #school{
+  display:inline;
+}
+
+#schoolLabel{
+  color:#FBFCF0;
+  text-decoration: underline;
+}
+
 .left{
   width:48%;
   float:left;
@@ -72,7 +82,16 @@ div{
   padding:3px;
 }
 
+
 #sectionText{
   width:60%;
   float:left;
+}
+
+a{
+  color: #dbdbdb;
+}
+
+a:hover{
+  color: #FECEE9;
 }
